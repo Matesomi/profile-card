@@ -6,10 +6,10 @@
 
 
 .profile-picture {
-  background-image: url(assets/v%C3%A1gott.png) no-repeat center/cover;
   float: left;
   position: fixed;
   width: 70%;
+  
   
 }
 
@@ -17,7 +17,14 @@
   width: 100%;
 }
 
-
+@media (max-width: 768px) {
+  .profile-picture {
+    width: 100%;
+    float: none;
+    position: inherit;
+    
+  }
+}
 
 /*=====content=====*/
 
@@ -26,6 +33,35 @@ content {
   width: 30%;
   padding: 3rem;
   color: #4a4a4a;
+}
+
+@media (max-width: 768px) {
+  content {
+    width: 100%;
+    float: none;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  section, footer, .pictures {
+    margin:0 5rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  footer {
+   margin-bottom: -4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 2rem;
+  }
 }
 
 /*====Header====*/
@@ -60,6 +96,37 @@ header::after {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem
+  }
+}
+
+@media (max-width: 768px) {
+  header p, h4 {
+    display: inline;
+    font-size: 1.7rem;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    margin-top: -14rem;
+    color: white;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header::after {
+   visibility: hidden;
+  }
+}
+
 
 /*====Section====*/
 
@@ -73,7 +140,7 @@ section::after {
   margin: 3rem 0;
 }
 
-/*====Pictures*/
+/*====Pictures====*/
 
 .pictures p {
   margin-bottom: 2rem;
@@ -113,70 +180,19 @@ ul {
 
 /*====@media====*/
 
-
-@media (max-width: 768px) {
-  .profile-picture {
-    width: 100%;
-    float: none;
-    position: inherit;
-    
-  }
-}
-
-
-@media (max-width: 768px) {
-  content {
-    width: 100%;
-    float: none;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   header {
-    text-align: center;
-    margin-top: -11rem;
-    color: white;
+    margin-top: -12rem;
+    margin-bottom: -1rem;
   }
 }
 
-@media (max-width: 768px) {
-  header::after {
-    visibility: hidden;
-  }
-}
-
-@media (max-width: 768px) {
-  section, footer, .pictures {
-    margin:0 5rem;
+@media (max-width: 430px) {
+  .social-icons {
+    font-size: 1.2rem;
+    margin: -1rem;
   }
 }
 
 
-
-@media (max-width: 768px) {
-  footer {
-   margin-bottom: -4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  section {
-    padding-top: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem
-  }
-}
-
-@media (max-width: 768px) {
-  header p, h4 {
-    display: inline;
-    font-size: 1.7rem;
-    
-  }
-}
 
