@@ -4,15 +4,20 @@
 
 /*====Profile-picture====*/
 
+
 .profile-picture {
+  background-image: url(assets/v%C3%A1gott.png) no-repeat center/cover;
+  float: left;
+  position: fixed;
   width: 70%;
-  position: fixed
+  
 }
 
-.profile {
+.me {
   width: 100%;
-  float: left;
 }
+
+
 
 /*=====content=====*/
 
@@ -30,7 +35,7 @@ header, h1, h4 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   margin-bottom: 2rem;
 }
 
@@ -70,14 +75,17 @@ section::after {
 
 /*====Pictures*/
 
-.sample-pictures {
-  width: 25%
+.pictures p {
+  margin-bottom: 2rem;
+  font-weight: 700;
 }
 
-.pictures-wrapper {
-  display: flex;
-  justify-content: center;
+.gomb {
+  padding: 1.2rem;
+  font-size: 2rem;
 }
+
+
 
 /*====Footer====*/
 
@@ -100,9 +108,75 @@ li {
 
 ul {
   padding: 1rem;
+  margin-bottom: 0;
+}
+
+/*====@media====*/
+
+
+@media (max-width: 768px) {
+  .profile-picture {
+    width: 100%;
+    float: none;
+    position: inherit;
+    
+  }
+}
+
+
+@media (max-width: 768px) {
+  content {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    margin-top: -11rem;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  header::after {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  section, footer, .pictures {
+    margin:0 5rem;
+  }
 }
 
 
 
+@media (max-width: 768px) {
+  footer {
+   margin-bottom: -4rem;
+  }
+}
 
+@media (max-width: 768px) {
+  section {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem
+  }
+}
+
+@media (max-width: 768px) {
+  header p, h4 {
+    display: inline;
+    font-size: 1.7rem;
+    
+  }
+}
 
