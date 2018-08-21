@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+/*====Profile-picture====*/
+
+.profile-picture {
+  width: 70%;
+  position: fixed
+}
+
+.profile {
+  width: 100%;
+  float: left;
+}
+
+/*=====content=====*/
+
+content {
+  float: right;
+  width: 30%;
+  padding: 3rem;
+  color: #4a4a4a;
+}
+
+/*====Header====*/
+
+header, h1, h4 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+h4, h1, p {
+  letter-spacing: 0.04rem
+}
+
+header {
+  margin-bottom: 4rem;
+}
+
+header p {
+  text-decoration: underline;
+}
+
+header::after {
+  display: inline-block;
+  content: "";
+  background-color: #4a4a4a;
+  height: 1px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/*====Section====*/
+
+section::after {
+  display: inline-block;
+  content: "";
+  background-color: #4a4a4a;
+  height: 1px;
+  width: 100%;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+/*====Pictures*/
+
+.sample-pictures {
+  width: 25%
+}
+
+.pictures-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/*====Footer====*/
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+ul {
+  padding: 1rem;
+}
+
+
+
+
+
